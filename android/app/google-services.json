@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691267417199",
+    "firebase_url": "https://cadeodog-13525.firebaseio.com",
+    "project_id": "cadeodog-13525",
+    "storage_bucket": "cadeodog-13525.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691267417199:android:11ea9d5d386a7678f3c99a",
+        "android_client_info": {
+          "package_name": "com.example.cadeocao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691267417199-3jh4482gkpv38bjq6gmh46l1bo9h2tbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiNxPDJ184LFoMbsJROVxV1fOzxFZzNWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691267417199-3jh4482gkpv38bjq6gmh46l1bo9h2tbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

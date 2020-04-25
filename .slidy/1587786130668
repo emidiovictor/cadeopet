@@ -1,0 +1,5 @@
+lib/app/modules/encontrei/encontrei_module.dart
+lib/app/modules/encontrei/encontrei_page.dart
+test/app/modules/encontrei/encontrei_page_test.dart
+lib/app/modules/encontrei/encontrei_controller.dart
+test/app/modules/encontrei/encontrei_controller_test.dart
