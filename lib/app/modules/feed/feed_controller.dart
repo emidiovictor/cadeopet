@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cadeocao/app/modules/feed/repositories/feed_repository_interface.dart';
 import 'package:cadeocao/app/modules/feed/widget/feed_model.dart';
 import 'package:mobx/mobx.dart';
@@ -14,9 +16,20 @@ abstract class _FeedControllerBase with Store {
   }
   @observable
   FeedModel feedModel = FeedModel();
-
   @observable
   ObservableStream<List<FeedModel>> feedList;
+
+  @computed
+  List<File> get images => feedModel.fotos;
+
+  @observable
+  ObservableList<File> fotos = ObservableList();
+
+  @action
+  addImage(File file) {
+    fotos.add(file);
+    feedModel = feedModel.copyWith(fotos: fotos);
+  }
 
   @action
   getList() {

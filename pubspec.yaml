@@ -27,7 +27,10 @@ dependencies:
   font_awesome_flutter:
   flutter_mobx: ^1.1.0
   carousel_slider:
+  google_maps_flutter:
+  location: ^3.0.0
   mobx: ^1.1.1
+  geoflutterfire:
   flutter_modular: ^1.1.2
   flutter:
     sdk: flutter
