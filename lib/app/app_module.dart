@@ -1,5 +1,6 @@
 import 'package:cadeocao/app/app_controller.dart';
 import 'package:cadeocao/app/modules/base/base_module.dart';
+import 'package:cadeocao/app/modules/feed/widget/publicacao/criar_publicao.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 import 'package:cadeocao/app/app_widget.dart';

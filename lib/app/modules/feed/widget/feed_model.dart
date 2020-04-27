@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FeedModel {
@@ -8,15 +10,27 @@ class FeedModel {
   List<String> imgsUrl;
   String descricao;
   String urlFotoPerfil;
+  List<File> fotos;
+
+  addFoto(File file) {
+    fotos.add(file);
+  }
+
+  bool hasFoto() {
+    return fotos.length > 0;
+  }
 
   FeedModel(
-      {this.nome,
+      {this.fotos,
+      this.nome,
       this.descricao,
       this.favorito,
       this.imgsUrl,
       this.localizacao,
       this.reference,
-      this.urlFotoPerfil});
+      this.urlFotoPerfil}) {
+    fotos = List<File>();
+  }
 
   factory FeedModel.fromDocument(DocumentSnapshot doc) {
     return FeedModel(

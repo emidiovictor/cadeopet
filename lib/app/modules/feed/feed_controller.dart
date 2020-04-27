@@ -12,6 +12,8 @@ abstract class _FeedControllerBase with Store {
   _FeedControllerBase(IFeedRepository this._repository) {
     this.getList();
   }
+  @observable
+  FeedModel feedModel = FeedModel();
 
   @observable
   ObservableStream<List<FeedModel>> feedList;

@@ -11,6 +11,20 @@ class Feed extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var carouselSlider = CarouselSlider.builder(
+      options: CarouselOptions(
+        enableInfiniteScroll: false,
+        enlargeCenterPage: true,
+      ),
+      itemCount: model.imgsUrl.length,
+      itemBuilder: (BuildContext context, int index) {
+        return Container(
+          child: Center(
+              child:
+                  Image.network(model.imgsUrl[index], fit: BoxFit.fitHeight)),
+        );
+      },
+    );
     return Card(
       child: Column(
         children: <Widget>[
@@ -30,18 +44,7 @@ class Feed extends StatelessWidget {
           ),
           Container(
             height: 250,
-            child: CarouselSlider(
-              options: CarouselOptions(
-                enableInfiniteScroll: false,
-                enlargeCenterPage: true,
-              ),
-              items: model.imgsUrl
-                  .map((item) => Container(
-                        child: Center(
-                            child: Image.network(item, fit: BoxFit.fitHeight)),
-                      ))
-                  .toList(),
-            ),
+            child: carouselSlider,
           ),
           Padding(
             padding: const EdgeInsets.all(15.0),
